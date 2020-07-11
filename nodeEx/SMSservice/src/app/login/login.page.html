@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title align="center">Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="secondary">
+    <ion-input type="text" name="uname" [(ngModel)]="uname" placeholder="Enter User Name"></ion-input>
+    <ion-input type="password" name="upwd" [(ngModel)]="upwd" placeholder="Enter Password"></ion-input>
+    <ion-button (click)="login({'uname':uname,'upwd':upwd})">Login</ion-button>
+  </ion-card>
+
+</ion-content>

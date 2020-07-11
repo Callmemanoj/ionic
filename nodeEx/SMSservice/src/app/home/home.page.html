@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title align="center" color="warning">
+      SMS Service
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="danger">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+  <ion-card color="warning">
+    <br><br>
+    <ion-title color="dark">Are you New User</ion-title>
+    
+    <ion-button [routerLink]="['/register']">Register <ion-icon name="caret-forward-outline"></ion-icon></ion-button>
+    <br><br>
+    <ion-title color="dark">Already User?</ion-title>
+    <ion-button [routerLink]="['/login']">Login</ion-button>
+    <br><br>
+  </ion-card> 
+  </div>
+</ion-content>

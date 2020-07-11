@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title align="center">Register Here</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item color="danger">
+      <ion-label>
+        <p>Enter First Name</p>
+      </ion-label>
+      <ion-input type="text" placeholder="Enter First Name" [(ngModel)]="ufirst"></ion-input>
+    </ion-item>
+    <ion-item color="danger">
+      <ion-label>
+        <p>Enter Last Name</p>
+      </ion-label>
+      <ion-input type="text" placeholder="Enter Last Name" [(ngModel)]="ulast"></ion-input>
+    </ion-item>
+    <ion-item color="danger">
+      <ion-label>
+        <p>Enter User Name</p>
+      </ion-label>
+      <ion-input type="text" placeholder="Enter username" [(ngModel)]="uname"></ion-input>
+    </ion-item>
+    <ion-item color="danger">
+      <ion-label>
+        <p>Enter Password</p>
+      </ion-label>
+      <ion-input type="password" placeholder="Enter Password" [(ngModel)]="upwd"></ion-input>
+    </ion-item>
+    <ion-item color="danger">
+      <ion-button color="secondary" slot="end" (click)="register({'ufirst':ufirst,'ulast':ulast,'uname':uname,'upwd':upwd})">Register</ion-button>
+    </ion-item>
+
+  </ion-card>
+
+</ion-content>

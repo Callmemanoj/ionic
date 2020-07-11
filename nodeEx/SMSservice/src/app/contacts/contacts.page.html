@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title align="center">Welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="danger">
+    <br /><br />
+    <ion-item color="danger">
+      <ion-button slot="end" name="logout" color="warning" (click)="exit()"
+        >LogOut<ion-icon name="exit-outline"></ion-icon
+      ></ion-button>
+    </ion-item>
+    <br />
+    <ion-item color="warning">
+      <ion-label>
+        <p>Enter Id:</p>
+      </ion-label>
+      <ion-input
+        type="number"
+        placeholder="Enter UserID"
+        [(ngModel)]="uid"
+      ></ion-input>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-label>
+        <p>Enter Mobile:</p>
+      </ion-label>
+      <ion-input
+        type="number"
+        placeholder="Enter Mobile"
+        [(ngModel)]="umobile"
+      ></ion-input>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-label>
+        <p>Enter Message:</p>
+      </ion-label>
+      <ion-input
+        type="text"
+        placeholder="Enter Message"
+        [(ngModel)]="umsg"
+      ></ion-input>
+    </ion-item>
+    <ion-item color="warning">
+      <ion-button
+        name="send"
+        (click)="contacts({'userid':uid,'usermobile':umobile,'usermsg':umsg})"
+        slot="end"
+        placeholder="Enter UserID"
+        name="btn"
+        >Submit</ion-button
+      >
+    </ion-item>
+
+    <br /><br />
+    <ion-title align="center" color="dark"
+      >Welcome to Business Messaging app.</ion-title
+    >
+    <br /><br />
+  </ion-card>
+</ion-content>
