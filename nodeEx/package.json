@@ -14,7 +14,7 @@
     "cors": "^2.8.5",
     "count": "^0.1.4",
     "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwt-simple": "^0.5.6",
     "mongodb": "2.2.32",
     "mongoose": "^5.9.20",
